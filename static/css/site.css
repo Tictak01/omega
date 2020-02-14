@@ -2,6 +2,10 @@
     padding: 20px;
 }
 
+.title {
+    font-weight: bold;
+}
+
 nav {
     background-color: #A5D6D9;
     padding: 20px;

@@ -5,7 +5,8 @@
 <h2>Results</h2>
 {% for p in packages %}
 <div>
-{{p}}
+<span class="title">{{p.name}}</span>
+<span>{{ p.version }}</span>
 </div>
 {% endfor %}
 
