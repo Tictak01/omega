@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My wicked awesome website</title>
-</head>
-<body>
-
+{% extends "_layout.html" %}
+{%  block main_content %}
 <h1>WELCOME</h1>
 
 <h2>Results</h2>
@@ -15,5 +9,4 @@
 </div>
 {% endfor %}
 
-</body>
-</html>
+{% endblock %}
