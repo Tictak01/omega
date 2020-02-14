@@ -1,12 +1,13 @@
 from flask import Flask
-
-app = Flask(__name__)
+import flask
+app = flask.Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
-
+def index():
+    test_packages = ['p1', 'p2', 'p3']
+    return flask.render_template('index.html', packages=test_packages)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
+
